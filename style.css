@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to bottom right, #0fb8ad, #1fc8db, #2cb5e8);
+    background-size: 200vh 200vw;
+    background-repeat: no-repeat;
+}
+
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 3vw 3vw 3vw 3vw 8vw 35vw 2vw 35vw 8vw;
+    grid-template-rows: auto 35vh 1vh 35vh auto;
+}
+
+/*
+-----header part-----
+*/
+
+.headertop {
+    grid-row: 1;
+    grid-column: 1 / 10;
+    font-size: 2rem;
+    color: lime;
+    align-self: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+-----Column menu part-----
+*/
+
+.wipedlist {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.hovered {
+    transition: background 1000ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+}
+
+.hovered:hover {
+    background: black;
+    transform: translateY(-5px);
+}
+
+
+.col1,
+.col2,
+.col3,
+.col4 {
+    background: linear-gradient(to bottom, green 20%, limegreen 80%);
+    box-shadow: 1px 1px 5px white;
+    text-align: center;
+    cursor: pointer;
+    grid-row: 2 / 5;
+
+}
+
+.col1 {
+
+    grid-column: 1;
+
+
+}
+
+.col2 {
+    grid-column: 2;
+
+
+
+}
+
+.col3 {
+    grid-column: 3;
+
+
+
+}
+
+.col4 {
+    grid-column: 4;
+
+
+
+}
+
+.blackened {
+    background-color: black;
+}
+
+
+/*
+-----4squares part-----
+*/
+
+.sqr1,
+.sqr2,
+.sqr3,
+.sqr4 {
+    box-shadow: 1px 1px 5px grey;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display: none;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    z-index: 5;
+    cursor: pointer;
+
+}
+
+.sqr1 {
+    grid-row: 2;
+    grid-column: 6;
+    background: linear-gradient(to bottom right, limegreen, green);
+
+}
+
+
+.sqr2 {
+    grid-row: 2;
+    grid-column: 8;
+    background: linear-gradient(to bottom left, limegreen, green);
+
+
+}
+
+.sqr3 {
+    grid-row: 4;
+    grid-column: 6;
+    background: linear-gradient(to top right, limegreen, green);
+
+
+}
+
+.sqr4 {
+    grid-row: 4;
+    grid-column: 8;
+    background: linear-gradient(to top left, limegreen, green);
+
+
+}
+
+div i {
+    float: right;
+}
