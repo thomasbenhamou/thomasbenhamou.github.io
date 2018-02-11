@@ -8,7 +8,7 @@ body {
 .gridwrapper {
     display: grid;
     grid-template-columns: 3vw 3vw 3vw 3vw 8vw 35vw 2vw 35vw 8vw;
-    grid-template-rows: auto 35vh 1vh 35vh auto;
+    grid-template-rows: 15vh 35vh 1vh 35vh auto;
 }
 
 /*
