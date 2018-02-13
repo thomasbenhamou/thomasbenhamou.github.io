@@ -2,40 +2,49 @@
 <html lang="fr">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="homestyle.css" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <title>Thomas Benhamou</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Using flexbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="flexstyle.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <header>
+        <div class="nav menu-container">
+            <div class="menu-logo">myLoGo</div>
+            <div class="menu-item">Who we are</div>
+            <div class="menu-item">Products
+                <div class="menu-dropdown">
+                    <p class="menu-dropdown-item">Custom Experience</p>
+                    <p class="menu-dropdown-item">Tailor Made Satisfaction</p>
+                    <p class="menu-dropdown-item">Exponantial Happiness</p>
+                </div>
+            </div>
 
-    <div class="container">
-        <div class="item-a"><a href="cv.html">My CV</a>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-
-            </ul>
-        </div>
-        <div class="item-b">B</div>
-        <div class="item-c">
-            <div class="item-c-subgrid">
-                <p class="item-c-col1">Nullam condimentum placerat ipsum nec malesuada. </p>
-                <p class="item-c-col2">Nullam condimentum placerat ipsum nec malesuada. </p>
-                <p class="item-c-col3">Nullam condimentum placerat ipsum nec malesuada. </p>
+            <div class="menu-item">Services
+                <div class="menu-dropdown">
+                    <p class="menu-dropdown-item">Collaboration</p>
+                    <p class="menu-dropdown-item">Friendship</p>
+                    <p class="menu-dropdown-item">Thrive for excellence</p>
+                </div>
+            </div>
+            <div class="menu-item with-dropdown">Queries
+                <div class="menu-dropdown">
+                    <p class="menu-dropdown-item">You can</p>
+                    <p class="menu-dropdown-item">Ask for</p>
+                    <p class="menu-dropdown-item">Anything</p>
+                </div>
             </div>
         </div>
-        <div class="item-d">D</div>
-        <div class="item-e">E</div>
-    </div>
+    </header>
+    <div class="jumbo">
+        <div class="jumboleft">
+        </div>
+        <div class="jumboright">
 
+        </div>
+    </div>
 
 </body>
 

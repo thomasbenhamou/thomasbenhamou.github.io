@@ -1,0 +1,169 @@
+/* RESETTING CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-clip: border-box;
+
+
+}
+
+*:after,
+*:before {
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+ul {
+    margin: O;
+    padding: 0;
+}
+
+/*SITE WIDE CSS*/
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    min-height: 100%;
+}
+
+
+
+/*NAV BAR CSS*/
+
+.menu-container {
+    display: flex;
+    background: linear-gradient(grey, slategrey);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-logo {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    flex: 1 1 auto;
+    margin: auto;
+    animation: animate-logo 2s infinite ease-in-out alternate;
+
+}
+
+.menu-item {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 2rem;
+    color: white;
+    padding-left: 1vw;
+    flex: 1 1 auto;
+    margin: auto;
+    padding: 1vh;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+.menu-item:hover {
+    /*background: linear-gradient(90deg, #18889e, #18886e);*/
+    background: #18886e;
+}
+
+
+.menu-item div {
+    display: none;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    list-style-type: none;
+    background: linear-gradient(180deg, #18889e, #18886e);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    position: relative;
+    padding: 1vh;
+    margin: auto;
+}
+
+
+
+.menu-item div p {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.menu-item:hover > div {
+    display: flex;
+}
+
+.menu-container:first-child {
+    padding-left: 2vw;
+}
+
+.menu-container:last-child {
+    padding-right: 1vw;
+}
+
+
+/* JUMBO FULL WIDTH WITH 2 COLUMNS*/
+
+.jumbo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh;
+    grid-template-areas: "left right";
+}
+
+.jumboleft {
+    grid-area: left;
+    background: lightgrey;
+    background: url(img/pexels-photo-248159.jpeg);
+}
+
+.jumboright {
+    grid-area: right;
+    background: grey;
+    background: url(img/pexels-photo-395196.jpeg);
+
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .menu-container {
+        flex-flow: row wrap;
+    }
+
+    .menu-item {
+        flex-flow: row wrap;
+    }
+    .menu-item div {
+        position: absolute;
+        margin-left: -1vw;
+        margin-bottom: 0.5vw;
+    }
+
+}
+
+
+
+/* KEYFRAMES */
+
+@keyframes animate-logo {
+
+    0% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(-6px);
+    }
+}
