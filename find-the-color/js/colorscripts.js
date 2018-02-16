@@ -46,6 +46,9 @@ $(function () {
         //reset the mycolor square 
         $("#my-color").css("background", "white");
 
+
+        //effect on the colored square 
+
     });
 
 
@@ -58,10 +61,9 @@ $(function () {
             console.log(mygreen);
             mycolor = myred + ", " + mygreen + ", " + myblue;
             $("#my-color").css("background", "rgb(" + mycolor + ")");
-        } else {
+        } else if (mygreen == 250) {
             $("#buttongreen").html("Green is full");
             $("#buttongreen").css("font-size", "2rem");
-
         }
     });
 
@@ -104,7 +106,7 @@ $(function () {
             console.log(mygreen);
             mycolor = myred + ", " + mygreen + ", " + myblue;
             $("#my-color").css("background", "rgb(" + mycolor + ")");
-        } else {
+        } else if (mygreen == 0) {
             $("#removegreen").html("Green is empty");
             $("#removegreen").css("font-size", "2rem");
 
@@ -184,9 +186,13 @@ $(function () {
                 msg += "Blue is good! - ";
             };
 
-            alert(msg);
+            $("#my-color").css("color", "white").html(msg);
         }
     });
+
+
+    //style effets 
+
 
 
 });

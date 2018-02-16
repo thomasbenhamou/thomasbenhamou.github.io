@@ -50,7 +50,6 @@ a {
 }
 
 .button {
-    border-radius: 5px 19px 19px 5px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -59,10 +58,19 @@ a {
     font-size: 14px;
     width: 20%;
     height: 8%;
-    padding: 20px;
-    color: white;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.6);
     margin: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
 }
 
 .button i {
@@ -74,17 +82,36 @@ a {
 }
 
 .red {
-    background-color: red;
+    color: red;
+    opacity: 0.7;
+}
+
+.red i {
+    color: red;
+    opacity: 0.7;
+
 }
 
 .green {
-    background-color: green;
+    color: green;
+    opacity: 0.7;
+
 
 }
 
-.blue {
-    background-color: blue;
+.green i {
+    color: green;
+}
 
+.blue {
+    color: blue;
+    opacity: 0.7;
+
+
+}
+
+.blue i {
+    color: blue;
 }
 
 #randomizer {
@@ -93,11 +120,34 @@ a {
     border-radius: 19px;
     color: rgba(0, 0, 0, 0.3);
     display: flex;
+    flex: 0 0 70%;
+    padding: 30px;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in-out;
 }
 
+#randomizer:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.5);
+    animation: rotation 2s;
+}
 
+@keyframes rotation {
+
+    0% {
+        transform: rotate(3deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+}
 
 #my-color,
 #the-color {
@@ -124,6 +174,13 @@ a {
     align-content: center;
     justify-content: center;
     background: linear-gradient(to bottom right, yellow, orange);
+    transition: all 0.2s ease-in-out;
+
+}
+
+#result:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #result p,
