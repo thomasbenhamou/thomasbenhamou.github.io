@@ -145,12 +145,46 @@ $(function () {
     //the check button
     //myblue == blue && myred == red && mygreen == green
     //.delay(800).html("Check")
+    var msg;
+
 
     $("#check").click(function () {
+        msg = "";
+
         if ((myblue == blue) && (mygreen == green) && (myred == red)) {
             $("#result").css("display", "flex");
         } else {
-            alert("no good, keep trying");
+            if (myred < red) {
+                msg += "Missing some red - ";
+            };
+            if (mygreen < green) {
+                msg += "Missing some green - ";
+            };
+            if (myblue < blue) {
+                msg += "Missing some blue - ";
+            };
+
+            if (myred > red) {
+                msg += "Too much red - "
+            };
+            if (mygreen > green) {
+                msg += "Too much green - ";
+            };
+            if (myblue > blue) {
+                msg += "Too much blue - ";
+            };
+
+            if (myred == red) {
+                msg += "Red is good! - ";
+            };
+            if (mygreen == green) {
+                msg += "Green is good! - ";
+            };
+            if (myblue == blue) {
+                msg += "Blue is good! - ";
+            };
+
+            alert(msg);
         }
     });
 

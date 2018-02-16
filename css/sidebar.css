@@ -13,6 +13,10 @@
 
 }
 
+.sidebar a:hover {
+    color: rgba(250, 250, 250, 0.5);
+}
+
 
 /* Profile CSS rules*/
 
@@ -50,9 +54,11 @@
     margin: 3px;
 }
 
+
 .projects a {
     color: rgba(250, 250, 250, 0.3);
 }
+
 
 .projects i {
     margin-right: 5px;

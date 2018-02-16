@@ -1,5 +1,16 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
 .container {
     display: flex;
+    height: 100vh;
     font-family: 'Acme', sans-serif;
 }
 
@@ -7,8 +18,13 @@
 .left-column {
     flex: 0 0 50%;
     display: flex;
-    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    display: flex;
     flex-flow: wrap;
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .left-column h1 {
@@ -22,27 +38,36 @@
 }
 
 .right-column {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
+    padding: 20px;
+    height: auto;
     flex-flow: row;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .button {
-    border-radius: 15px;
+    border-radius: 5px 19px 19px 5px;
     display: flex;
-    align-content: center;
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    font-size: 14px;
     width: 20%;
-    height: 10%;
-    padding: 30px;
+    height: 8%;
+    padding: 20px;
     color: white;
     margin: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+.button i {
+    padding-bottom: 5px;
+}
 
 .large {
     width: 100%;
@@ -64,7 +89,12 @@
 
 #randomizer {
     background: rgba(0, 0, 0, 0.2);
-    color: gray;
+    font-size: 1.5rem;
+    border-radius: 19px;
+    color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -72,23 +102,22 @@
 #my-color,
 #the-color {
     flex: 0 0 80%;
-    width: 50%;
     height: 10vh;
-    margin: 30px;
-    border: 20px solid black;
-    border-radius: 15px;
+    margin: 5px;
+    padding: 50px;
+    border-radius: 2px;
+    border: 4px solid black;
     color: black;
-    align-items: center;
+    display: flex;
+    align-content: center;
     justify-content: center;
 }
 
 
 #result {
-    flex: 0 0 80%;
     display: none;
+    padding: 10px;
     font-size: 2rem;
-    width: 50%;
-    height: 10vh;
     margin: 2px;
     border-radius: 30px;
     color: deeppink;
@@ -97,14 +126,20 @@
     background: linear-gradient(to bottom right, yellow, orange);
 }
 
-#result p {
+#result p,
+#my-color p,
+#the-color p {
     margin: auto;
 }
 
 #check {
     display: flex;
+    border-radius: 19px;
+    font-size: 1.5rem;
     align-content: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.2);
     height: 10vh;
+    color: rgba(0, 0, 0, 0.3);
+
 }
