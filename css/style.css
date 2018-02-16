@@ -1,0 +1,28 @@
+/*Import of the different components stylesheets*/
+
+@import url("sidebar.css");
+@import url("main.css");
+
+/*Main CSS properties*/
+
+body {
+    background: rgba(0, 0, 0, 0.08);
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+}

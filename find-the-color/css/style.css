@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    font-family: 'Acme', sans-serif;
+}
+
+
+.left-column {
+    flex: 0 0 50%;
+    display: flex;
+    height: 100vh;
+    flex-flow: wrap;
+}
+
+.left-column h1 {
+    flex: 0 0 100%;
+    margin: 0;
+}
+
+.left-column h2 {
+    flex: 0 0 100%;
+    margin: 0;
+}
+
+.right-column {
+    flex: 0 0 50%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    height: 10%;
+    padding: 30px;
+    color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.large {
+    width: 100%;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+#randomizer {
+    background: rgba(0, 0, 0, 0.2);
+    color: gray;
+}
+
+
+
+#my-color,
+#the-color {
+    flex: 0 0 80%;
+    width: 50%;
+    height: 10vh;
+    margin: 30px;
+    border: 20px solid black;
+    border-radius: 15px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#result {
+    flex: 0 0 80%;
+    display: none;
+    font-size: 2rem;
+    width: 50%;
+    height: 10vh;
+    margin: 2px;
+    border-radius: 30px;
+    color: deeppink;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, yellow, orange);
+}
+
+#result p {
+    margin: auto;
+}
+
+#check {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    height: 10vh;
+}

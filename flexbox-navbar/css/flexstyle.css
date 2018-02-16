@@ -124,13 +124,13 @@ body {
 .jumboleft {
     grid-area: left;
     background: lightgrey;
-    background: url(img/pexels-photo-248159.jpeg);
+    background: url(../img/pexels-photo-248159.jpeg);
 }
 
 .jumboright {
     grid-area: right;
     background: grey;
-    background: url(img/pexels-photo-395196.jpeg);
+    background: url(../img/pexels-photo-395196.jpeg);
 
 
 }

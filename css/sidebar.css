@@ -1,0 +1,81 @@
+/* Sidebar CSS rules*/
+
+.sidebar {
+    background: rgba(161, 60, 38, 1);
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 0 0 19%;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: sticky;
+    padding: 7px;
+    justify-content: space-around;
+
+}
+
+
+/* Profile CSS rules*/
+
+.profile {
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+
+.profile img {
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    margin: 2px;
+}
+
+.profile h2 {
+    color: rgba(250, 250, 250, 0.8);
+}
+
+.projects {
+    height: 50%;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    align-items: center;
+    border-top: 1px solid rgba(250, 250, 250, 0.15);
+}
+
+
+
+.projects li {
+    margin: 4px 0px;
+    padding: 4px;
+    margin: 3px;
+}
+
+.projects a {
+    color: rgba(250, 250, 250, 0.3);
+}
+
+.projects i {
+    margin-right: 5px;
+    color: rgba(250, 250, 250, 0.3);
+}
+
+.accounts {
+    padding: 10px 0px;
+    border-top: 1px solid rgba(250, 250, 250, 0.5);
+    align-items: center;
+    width: 90%;
+
+}
+
+.accounts li {
+    margin: 4px 0px;
+}
+
+.accounts i {
+    margin-right: 5px;
+    color: rgba(250, 250, 250, 0.3);
+}
+
+.accounts a {
+    color: rgba(250, 250, 250, 0.3);
+}
