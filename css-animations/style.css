@@ -1,0 +1,17 @@
+@import url("./css/buttons.css");
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
