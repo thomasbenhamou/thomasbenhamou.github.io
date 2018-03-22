@@ -5,58 +5,99 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Some Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <!-- Link to main style sheet -->
-    <link href="./css/style.css" rel="stylesheet">
-
 
 
     <title>Thomas Benhamou</title>
 </head>
-
 <body>
-    <div class="main-container">
-        <div class="sidebar">
-            <div class="profile">
-                <img src="img/photo-thomas.jpg" alt="thomas benhamou">
-                <h2>Thomas Benhamou</h2>
+<header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Junior Web Developper</h4>
+              <p class="text-muted">Junior skills in Php/JavaScript with personnal experience with the Symfony framework</p>
             </div>
-            <div class="projects">
-                <ul>
-                    <li><a href="">A website from scratch</a></li>
-                    <li><a href="./flexbox-navbar/flexboxmenu.html">A simple Flexbox navbar</a></li>
-                    <li><a href="./find-the-color/color.html">A JS colors' game</a></li>
-                    <li><a href="css-animations/index.html">CSS experiments</a></li>
-
-                </ul>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">GitHub</a></li>
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
             </div>
-            <div class="accounts">
-                <ul>
-                    <li><i class="fab fa-codepen"></i><a href="https://codepen.io/thomasbenhamou/">Codepen profile</a></li>
-
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="main">
-            <h2 class="page-title">Projects and experiments I worked on so far</h2>
-            <h3>Creating a website for a small company</h3>
-            <p>Used Bootstrap to avoid the coding of JS animations, and to benefit from their grid system</p>
-            <img src="img/chouvet.jpg" alt="A bootstrap website" class="page-img">
-            <h3>Creating from scratch a simple navbar</h3>
-            <p>A nice way to learn how to use flexbox, and CSS pseudo elements to show dropdowns</p>
-            <h3>A game of colors made with Javascript (vanilla and jQuery)</h3>
-            <p>Another nice way of learning how to manipulate the DOM and CSS properties with JS</p>
-            <h3>CSS experimentations</h3>
-            <p>Learing about animations, transitions, pseudo-elements, and how to use them to create great UX</p>
-            <p>Far from being able to produce something worth re-using, still learning </p>
-
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Thomas</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-    </div>
+      </div>
+    </header>
+
+
+
+
+<div class="container">
+  <p class="mb-3">You can find here a list of my personnal projects.</p>
+  <div class="container">
+      <h2>A jobboard for local winter jobs</h2>
+      See link: <a href="https://winterjobs.herokuapp.com/"><h3>WinterJobs</h3></a>
+      <h4>Made from scratch in <i class="fab fa-php"></i> and <i class="fab fa-js"></i> using:</h4>
+      <ul>
+        <li>Symfony 4</li>
+        <img src="img/sf4.svg" style="height: 2rem;">
+        <li>Doctrine 2 ORM</li>
+        <li>Bootstrap</li>
+      </ul>
+      <p>Allow users to browse winter jobs in ski resorts.</p>
+      <p>Main functionnalities</p>
+      <ul>
+        <li>User sign up and registration using Symfony's authentication and authorization tools: users have different roles, either normal user or admin user. The latter is able to manage all the job adverts (read, update, delete)</li>
+        <ul>
+          <li>On sign up, password is hashed</li>
+        </ul>
+        <li>If signed up, a user can post a new job advert</li>
+        <ul>
+          <li>The form is validated using Doctrine and Symfony constraints on password, emails, etc.</li>
+          <li>The advert's address is geocoded using Google Maps JS API</li>
+        </ul>
+        <li>On the main page, adverts are displayed along with a Google Maps showing custom markers and job infos</li>
+        <li>Once signed up, the user can:
+          <ul>
+            <li>See the adverts that he has already posted</li>
+            <li>Update and/or delete them</li>
+          </ul>
+        </li>
+      </ul>
+  </div> 
+
+</div>
+
+</div>
+
+
 
     <!-- JavaScript -->
     <!-- jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
